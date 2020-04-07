@@ -99,7 +99,7 @@ tab.tabbrowser-tab[label="Add-ons Manager"] .tab-line[selected="true"] {
 background-color: red !important;
 }
 
-/* Others */
+/* Urlbar aesthetic changes */
 
 #nav-bar{border-top: 0px !important; background:none !important; border: none !important; box-shadow:none !important;}
 #PersonalToolbar{background:none !important;}
@@ -150,7 +150,7 @@ browser[type=content] > html
 }
 
 
-/* Rounded URL bar and search bar ===========
+/* Rounded URL bar and search bar 
 #urlbar, .searchbar-textbox {
     border-radius: 1em !important;
 }
@@ -312,6 +312,8 @@ browser[type=content] > html
 }
 
 /* Makes context menu dark */ 
+
+/* from https://github.com/M1ch431/FirefoxW10ContextMenus/blob/master/userChrome.css */
 
 /* Colors */
 
