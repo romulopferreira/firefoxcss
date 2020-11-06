@@ -53,7 +53,8 @@
 
 /* Centers url bar text */
 
-#urlbar:not([focused]) #urlbar-input { 
+/*#urlbar:not([focused]) #urlbar-input { */
+#urlbar #urlbar-input { 
   text-align: center !important; 
 }
 
@@ -74,7 +75,7 @@
 /* Highlights active tab background (for dark themes that are not completely black) */
 
 .tab-background[selected="true"] {
-    background-attachment: none!important;
+    background-attachment: none!important;  
     background-color: rgba(0,0,0,0.7) !important;
     background-image: none!important;
 }
@@ -83,12 +84,32 @@
     color: white !important;
 }
 
-/* Makes tab line magenta */
+/* Makes tab line and tab throbber magenta */
 
 .tab-line[selected]{ 
     background-color: rgb(200,0,255) !important; 
         height: 2px !important;
 }*/
+
+/*
+.tab-throbber::before {
+  fill: rgb(200,0,255) !important;
+  opacity: 1 !important;
+}
+.tab-throbber:not([progress])::before {
+  filter: grayscale(50%);
+}
+@media (min-resolution: 2dppx) {
+  .tab-throbber::before {
+    fill: rgb(200,0,255) !important;
+    opacity: 1 !important;
+  }
+}
+
+
+:root {
+--tab-loading-fill: rgb(200,0,255) !important;
+}
 
 /* Makes config tabs tab-line red */
 
@@ -99,7 +120,7 @@ tab.tabbrowser-tab[label="Add-ons Manager"] .tab-line[selected="true"] {
 background-color: red !important;
 }
 
-/* Urlbar aesthetic changes */
+/* Others */
 
 #nav-bar{border-top: 0px !important; background:none !important; border: none !important; box-shadow:none !important;}
 #PersonalToolbar{background:none !important;}
@@ -150,7 +171,7 @@ browser[type=content] > html
 }
 
 
-/* Rounded URL bar and search bar 
+/* Rounded URL bar and search bar ===========
 #urlbar, .searchbar-textbox {
     border-radius: 1em !important;
 }
@@ -286,7 +307,7 @@ browser[type=content] > html
 	transition-delay: 0.1s !important;
 } 
 
-/* Expands urlbar when focused */
+/* Expands urlbar when focused
 
 :root:not([customizing]) #navigator-toolbox:focus-within #nav-bar {
   margin-right: 40vw !important;
@@ -312,8 +333,6 @@ browser[type=content] > html
 }
 
 /* Makes context menu dark */ 
-
-/* from https://github.com/M1ch431/FirefoxW10ContextMenus/blob/master/userChrome.css */
 
 /* Colors */
 
